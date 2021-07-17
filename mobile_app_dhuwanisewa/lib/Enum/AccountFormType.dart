@@ -1,0 +1,4 @@
+enum AccountFormType{
+  Login,
+  Register
+}

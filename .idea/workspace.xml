@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="f7119b16-0bbc-44e0-b4bb-85855f3dad46" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Wheeler/.vs/Wheeler/DesignTimeBuild/.dtbcache.v2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/.vs/Wheeler/config/applicationhost.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/.vs/Wheeler/v16/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/Auth/AuthenticationAplication.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/Auth/IAuthenticationApplication.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/User/IUserApplication.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/User/UserApplication.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/Wheeler.Application.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Application.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Application.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Application.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Application.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Application.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Database.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Database.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/bin/Debug/netcoreapp3.1/Wheeler.Utils.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Debug/netcoreapp3.1/Wheeler.Application.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Wheeler.Application.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Wheeler.Application.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/Wheeler.Application.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Application/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/Wheeler.CrossCutting.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Wheeler.CrossCutting.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Wheeler.CrossCutting.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/Wheeler.CrossCutting.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.CrossCutting/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Auth/RefreshTokenConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Client/CustomerConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Common/AppUserConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Common/CompanyDetailConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Common/PersonalDetailConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Employee/EmployeeConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Identity/RoleConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Configuration/Identity/UserConfiguartion.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Context/Context.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210511185246_initDbCreate.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210511185246_initDbCreate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210513180015_dbUpdateWithNewAndExisting.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210513180015_dbUpdateWithNewAndExisting.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210517174243_cascade delete on user and app user relation modeified to restrict.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210517174243_cascade delete on user and app user relation modeified to restrict.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210522165341_refresh token entity is added.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/20210522165341_refresh token entity is added.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Migrations/SecurityContextModelSnapshot.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Repository/Abstraction/BaseRepository.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Repository/Abstraction/IRepositoryService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Repository/Abstraction/IUnitOfWork.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Repository/Implementation/RepositoryService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Repository/Implementation/UnitOfWork.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/Wheeler.Database.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Database.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Database.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Database.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Database.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Database.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/bin/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Debug/netcoreapp3.1/Wheeler.Database.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Wheeler.Database.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Wheeler.Database.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/Wheeler.Database.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Database/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/Auth/AuthenticationDomain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/Auth/IAuthenticationDomain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/User/IUserDomain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/User/UserDomain.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/Wheeler.Domain.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Database.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Database.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Domain.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Domain.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Domain.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/bin/Debug/netcoreapp3.1/Wheeler.Utils.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Debug/netcoreapp3.1/Wheeler.Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Wheeler.Domain.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Wheeler.Domain.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/Wheeler.Domain.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Domain/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/Extension/AddCommonServices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/Extension/AddIdentityServices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/Extension/AddRepositoryServices.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/Helper/IdentityDataInitializer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/IServiceCollectionExtension.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/Wheeler.IoC.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Application.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Application.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Database.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Database.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.IoC.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.IoC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.IoC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.IoC.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.IoC.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/bin/Debug/netcoreapp3.1/Wheeler.Utils.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Debug/netcoreapp3.1/Wheeler.IoC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Wheeler.IoC.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Wheeler.IoC.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/Wheeler.IoC.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.IoC/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Auth/RefreshToken.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Client/Customer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Common/AppUsers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Common/CompanyDetail.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Common/PersonalDetail.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Employee/Employee.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Identity/ApplicationRoles.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/DbEntities/Identity/ApplicationUsers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/Enum/Common/ResponseStatus.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/Enum/Identity/User.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/Enum/Identity/UserRole.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Auth/AuthenticationResult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Auth/JwtConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Auth/LoginViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Auth/RefreshTokenViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Auth/TokenModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Common/RegisterUserViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/ViewModel/Common/ResponseModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/Wheeler.Model.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/bin/Debug/netcoreapp3.1/Wheeler.Model.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/bin/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/bin/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Wheeler.Model.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Wheeler.Model.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/Wheeler.Model.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Model/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/CustomException/CustomException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/Helper/Hash/HashMeHelper.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/Wheeler.Utils.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/bin/Debug/netcoreapp3.1/Wheeler.Utils.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/bin/Debug/netcoreapp3.1/Wheeler.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/bin/Debug/netcoreapp3.1/Wheeler.Utils.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Debug/netcoreapp3.1/Wheeler.Utils.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Wheeler.Utils.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Wheeler.Utils.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/Wheeler.Utils.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.Utils/obj/project.nuget.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler.sln" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/Api/Controller/Account/AccountController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/Program.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/Startup.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/Wheeler.Web.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/Wheeler.Web.csproj.user" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/EntityFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Humanizer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.ComponentModel.Annotations.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Application.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Application.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.CrossCutting.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Database.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Database.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Domain.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Domain.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.IoC.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.IoC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Model.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Model.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Utils.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Utils.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Web.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Web.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Web.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Web.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/Wheeler.Web.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/appsettings.Development.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/appsettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-arm/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.1/Microsoft.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Runtime.Caching.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/.NETCoreApp,Version=v3.1.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.AssemblyInfoInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.MvcApplicationPartsAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.RazorTargetAssemblyInfo.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.csproj.CoreCompileInputs.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.genruntimeconfig.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.Web.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/Wheeler.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/apphost.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/staticwebassets/Wheeler.Web.StaticWebAssets.Manifest.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Debug/netcoreapp3.1/staticwebassets/Wheeler.Web.StaticWebAssets.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Wheeler.Web.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Wheeler.Web.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Wheeler.Web.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Wheeler.csproj.nuget.dgspec.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Wheeler.csproj.nuget.g.props" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/Wheeler.csproj.nuget.g.targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/project.assets.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Wheeler/Wheeler/obj/project.nuget.cache" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1vRCB5gixIS3ERJsUMdCkWaJPUM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f7119b16-0bbc-44e0-b4bb-85855f3dad46" name="Default Changelist" comment="" />
+      <created>1626515377317</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1626515377317</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="342" y="96" key="new project wizard" timestamp="1626515521410">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="342" y="96" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1626515521410" />
+  </component>
+</project>
