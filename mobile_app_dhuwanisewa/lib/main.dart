@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Login.dart';
+import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
 
-void main() => runApp(DhuwaniSewaApp());
+void main(){
+  setupServiceLocator();
+  runApp(DhuwaniSewaApp());
+}
 
 class DhuwaniSewaApp extends StatelessWidget {
   @override
@@ -33,3 +37,4 @@ class AppHomeState extends State<AppHome>{
     );
   }
 }
+
