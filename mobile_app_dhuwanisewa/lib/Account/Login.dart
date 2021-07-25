@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Header.dart';
+import 'package:mobile_app_dhuwanisewa/Account/Model/LoginModel.dart';
+import 'package:mobile_app_dhuwanisewa/Account/Service/AccountService.dart';
 import 'package:mobile_app_dhuwanisewa/Account/ServiceProviderRegistration.dart';
 import 'package:mobile_app_dhuwanisewa/Account/ServiceSeekerRegistration.dart';
 import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
+import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -13,12 +16,11 @@ class LoginPage extends StatefulWidget {
 }
 
 class LoginPageState extends State<LoginPage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(
-        padding: EdgeInsets.fromLTRB(10,30,10,0),
+        padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
         children: [
           appHeading(),
           LoginForm(),
@@ -123,7 +125,7 @@ class LoginFormState extends State<LoginForm> {
   TextEditingController passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _passwordHidden = true;
-
+  IAccountService _accountService = getIt<IAccountService>();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -196,6 +198,20 @@ class LoginFormState extends State<LoginForm> {
                     ),
                     onPressed: () {
                       if (_formKey.currentState!.validate()) {
+                        final LoginModel reuestParam = new LoginModel(
+                            userName: userNameController.text,
+                            password: passwordController.text);
+                        _accountService.login(reuestParam).then((value) {
+                          print(value.toString());
+                          final snackbar = SnackBar(
+                              content: Text(
+                            "Successfully loged in.",
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.w500),
+                          ));
+                          ScaffoldMessenger.of(context).showSnackBar(snackbar);
+                        });
+
                         print(userNameController.text);
                         print(passwordController.text);
                       }
