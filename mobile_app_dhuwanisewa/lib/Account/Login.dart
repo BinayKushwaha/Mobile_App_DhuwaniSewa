@@ -5,7 +5,9 @@ import 'package:mobile_app_dhuwanisewa/Account/Model/LoginModel.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Service/AccountService.dart';
 import 'package:mobile_app_dhuwanisewa/Account/ServiceProviderRegistration.dart';
 import 'package:mobile_app_dhuwanisewa/Account/ServiceSeekerRegistration.dart';
+import 'package:mobile_app_dhuwanisewa/Commmon/CustomWidget/CustomNotification.dart';
 import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
+import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
 
 class LoginPage extends StatefulWidget {
@@ -125,7 +127,7 @@ class LoginFormState extends State<LoginForm> {
   TextEditingController passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   bool _passwordHidden = true;
-  IAccountService _accountService = getIt<IAccountService>();
+  AccountService _accountService = getIt<AccountService>();
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -196,21 +198,15 @@ class LoginFormState extends State<LoginForm> {
                       'Login',
                       style: TextStyle(fontSize: 20),
                     ),
-                    onPressed: () {
+                    onPressed: () async {
                       if (_formKey.currentState!.validate()) {
                         final LoginModel reuestParam = new LoginModel(
                             userName: userNameController.text,
                             password: passwordController.text);
-                        _accountService.login(reuestParam).then((value) {
-                          print(value.toString());
-                          final snackbar = SnackBar(
-                              content: Text(
-                            "Successfully loged in.",
-                            style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.w500),
-                          ));
-                          ScaffoldMessenger.of(context).showSnackBar(snackbar);
-                        });
+
+                        LoginResponseModel result=await _accountService.login(reuestParam);
+                        CustomNotification.showNotification(context,
+                            result.message, result.notifyType);
 
                         print(userNameController.text);
                         print(passwordController.text);

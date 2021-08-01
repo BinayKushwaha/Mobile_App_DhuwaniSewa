@@ -4,8 +4,9 @@ import 'package:http/http.dart' as httpClient;
 import 'package:mobile_app_dhuwanisewa/Account/Model/LoginModel.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/ApiBaseEndPoint.dart';
 
-class AccountService extends IAccountService {
-  Future<UserRegistrationModel> save(UserRegistrationModel model) async {
+class AccountServiceImplementation extends AccountService {
+  @override
+  Future<dynamic> save(UserRegistrationModel model) async {
     Map param = {
       "id": model.userId,
       "userName": model.userName,
@@ -24,24 +25,16 @@ class AccountService extends IAccountService {
             },
             body: jsonEncode(param))
         .onError((error, stackTrace) {
-      print('error: $error');
-      print('stackTrace: $stackTrace');
       throw Exception("Failed to add user");
     });
-    print(response.body);
-    if (response.statusCode == 200) {
-      return UserRegistrationModel.fromJson(jsonDecode(response.body));
-    } else {
-      throw Exception("Failed to registter users.");
-    }
+    final result = jsonDecode(response.body);
+    return result;
   }
 
   Future<String> getHome() async {
     final httpClient.Response reponse = await httpClient
         .get(Uri.parse(ApiBaseEndPoint.baseUri + '/api/serviceprovider/list'))
         .onError((error, stackTrace) {
-      print('error: $error');
-      print('stackTrace: $stackTrace');
       throw Exception("Failed to get Home page");
     });
     var result = reponse.body.toString();
@@ -49,6 +42,7 @@ class AccountService extends IAccountService {
     return result;
   }
 
+  @override
   Future<LoginResponseModel> login(LoginModel model) async {
     Map param = {"userName": model.userName, "password": model.password};
     httpClient.Response response = await httpClient.post(
@@ -61,15 +55,18 @@ class AccountService extends IAccountService {
       Map<String, dynamic> result = jsonDecode(response.body);
       dynamic data = result["data"];
       return new LoginResponseModel(
-          accessToken: data["accessToken"], refreshToken: data["refreshToken"]);
+          accessToken: data["accessToken"],
+          refreshToken: data["refreshToken"],
+          message: result["message"],
+          notifyType: result["status"]);
     } else {
       throw Exception("Login failed");
     }
   }
 }
 
-abstract class IAccountService {
-  Future<UserRegistrationModel> save(UserRegistrationModel model);
+abstract class AccountService {
+  Future<dynamic> save(UserRegistrationModel model);
   Future<String> getHome();
   Future<LoginResponseModel> login(LoginModel model);
 }

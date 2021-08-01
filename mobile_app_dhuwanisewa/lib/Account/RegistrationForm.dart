@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Model/AccountModel.dart';
+import 'package:mobile_app_dhuwanisewa/Commmon/CustomWidget/CustomNotification.dart';
 import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/UserType.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Service/AccountService.dart';
@@ -22,10 +23,46 @@ class RegistrationFormState extends State<RegistrationForm> {
   UserType userType;
   bool _passwordHiden = true;
   bool _isServiceProvider = true;
-  IAccountService _accountService = getIt<IAccountService>();
+  AccountService _accountService = getIt<AccountService>();
 
   RegistrationFormState({required this.userType});
   final _formKey = GlobalKey<FormState>();
+
+  void _registrationConfirmationDialog(UserRegistrationModel reuestParam) {
+    showDialog(
+        context: context,
+        builder: (BuildContext contextBuilder) {
+          return AlertDialog(
+            title: Text("Account verification"),
+            content: SingleChildScrollView(
+              child: ListBody(
+                children: <Widget>[
+                  Text('We will send you Otp code at ${reuestParam.userName}.')
+                ],
+              ),
+            ),
+            actions: <Widget>[
+              TextButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  child: const Text("Edit")),
+              TextButton(
+                  onPressed: () async {
+                    dynamic result =await _accountService.save(reuestParam);
+                    String message = result["message"];
+                    String status = result["status"];
+                    CustomNotification.showNotification(
+                        context, message, status);
+
+                    Navigator.of(context).pop();
+                  },
+                  child: const Text("Ok"))
+            ],
+          );
+        });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -124,23 +161,18 @@ class RegistrationFormState extends State<RegistrationForm> {
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
                     if (userType == UserType.ServiceProvider)
-                      _isServiceProvider=true;
+                      _isServiceProvider = true;
                     else if (userType == UserType.ServiceSeeker)
-                      _isServiceProvider=false;
-                      UserRegistrationModel model=new UserRegistrationModel(
-                          userName: _userNameController.text,
-                          password: _passwordController.text,
-                          isCompnay: false,
-                          isEmployee: false,
-                          isServiceProvider: _isServiceProvider,
-                          firstName: _firstNameController.text,
-                          lastName: _lastNameController.text);
-                      print(model.userName);
-                      _accountService.getHome();
-                      _accountService.save(model).then((value){
-                        print('User regitered succesfully');
-                        print(value);
-                      });
+                      _isServiceProvider = false;
+                    UserRegistrationModel model = new UserRegistrationModel(
+                        userName: _userNameController.text,
+                        password: _passwordController.text,
+                        isCompnay: false,
+                        isEmployee: false,
+                        isServiceProvider: _isServiceProvider,
+                        firstName: _firstNameController.text,
+                        lastName: _lastNameController.text);
+                    _registrationConfirmationDialog(model);
                   }
                 },
               ),

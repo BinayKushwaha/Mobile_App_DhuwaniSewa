@@ -7,5 +7,11 @@ class LoginModel {
 class LoginResponseModel {
   String accessToken;
   String refreshToken;
-  LoginResponseModel({required this.accessToken, required this.refreshToken});
+  String notifyType;
+  String message;
+  LoginResponseModel(
+      {required this.notifyType,
+      required this.message,
+      required this.accessToken,
+      required this.refreshToken});
 }
