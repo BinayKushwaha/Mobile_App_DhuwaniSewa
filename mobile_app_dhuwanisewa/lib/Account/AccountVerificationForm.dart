@@ -74,8 +74,6 @@ class AccountVerficationFormState extends State<AccountVerficationForm> {
                       final String userName = widget.userName;
                       ResponseModel response=await _accountService.resendOtp(userName);
                       CustomNotification.showNotification(context, response.message, response.status);
-                      print('otp username: ' + userName);
-                      // call resend end points
                     },
                     child: Text(
                       'Resend',

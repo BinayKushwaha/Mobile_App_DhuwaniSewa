@@ -56,21 +56,17 @@ class RegistrationFormState extends State<RegistrationForm> {
                     dynamic result = await _accountService.save(reuestParam);
                     String message = result["message"];
                     String status = result["status"];
-                    // if (status ==
-                    //     EnumToString.convertToString(ResponseStatus.Success)) {
-                    //   Navigator.push(
-                    //       context,
-                    //       MaterialPageRoute(
-                    //           builder: (context) => VerifyAccount()));
-                    // } else {
-                    //   CustomNotification.showNotification(
-                    //       context, message, status);
-                    //   Navigator.of(context).pop();
-                    // }
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => VerifyAccount(userName: reuestParam.userName,)));
+                    if (status ==
+                        EnumToString.convertToString(ResponseStatus.Success)) {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => VerifyAccount(userName:reuestParam.userName )));
+                    } else {
+                      CustomNotification.showNotification(
+                          context, message, status);
+                      Navigator.of(context).pop();
+                    }
                   },
                   child: const Text("Ok"))
             ],

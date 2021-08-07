@@ -10,6 +10,9 @@ import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
 
+import 'OtpResendForm.dart';
+import 'VerfiyAccount.dart';
+
 class LoginPage extends StatefulWidget {
   @override
   LoginPageState createState() {
@@ -187,6 +190,12 @@ class LoginFormState extends State<LoginForm> {
                       style:
                           TextStyle(fontWeight: FontWeight.w500, fontSize: 15)),
                 ),
+                TextButton(
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => OtpResend()));
+                    },
+                    child: Text('Verify your account')),
                 Container(
                   height: 80,
                   padding: EdgeInsets.all(10),
