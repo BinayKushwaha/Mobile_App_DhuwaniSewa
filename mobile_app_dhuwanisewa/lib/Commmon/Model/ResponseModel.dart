@@ -1,7 +1,7 @@
 class ResponseModel {
   String status;
   String message;
-  String data;
+  dynamic data;
   ResponseModel(
       {required this.status, required this.message, required this.data});
 }

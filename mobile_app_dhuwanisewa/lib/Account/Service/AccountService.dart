@@ -2,7 +2,9 @@ import 'dart:convert';
 import 'package:mobile_app_dhuwanisewa/Account/Model/AccountModel.dart';
 import 'package:http/http.dart' as httpClient;
 import 'package:mobile_app_dhuwanisewa/Account/Model/LoginModel.dart';
+import 'package:mobile_app_dhuwanisewa/Account/Model/OtpModel.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/ApiBaseEndPoint.dart';
+import 'package:mobile_app_dhuwanisewa/Commmon/Model/ResponseModel.dart';
 
 class AccountServiceImplementation extends AccountService {
   @override
@@ -43,7 +45,7 @@ class AccountServiceImplementation extends AccountService {
   }
 
   @override
-  Future<LoginResponseModel> login(LoginModel model) async {
+  Future<Map<String, dynamic>> login(LoginModel model) async {
     Map param = {"userName": model.userName, "password": model.password};
     httpClient.Response response = await httpClient.post(
         Uri.parse(ApiBaseEndPoint.baseUri + '/api/account/login/'),
@@ -51,22 +53,47 @@ class AccountServiceImplementation extends AccountService {
           'Content-Type': 'application/json; charset=UTF-8'
         },
         body: jsonEncode(param));
-    if (response.statusCode == 200) {
-      Map<String, dynamic> result = jsonDecode(response.body);
-      dynamic data = result["data"];
-      return new LoginResponseModel(
-          accessToken: data["accessToken"],
-          refreshToken: data["refreshToken"],
-          message: result["message"],
-          notifyType: result["status"]);
-    } else {
-      throw Exception("Login failed");
-    }
+    Map<String, dynamic> result = jsonDecode(response.body);
+    return result;
+  }
+
+  @override
+  Future<ResponseModel> verifyAccount(OtpModel model) async {
+    Map param = {"userName": model.userName, "otp": model.otp};
+    httpClient.Response response = await httpClient.post(
+        Uri.parse(ApiBaseEndPoint.baseUri + '/api/account/verifyaccount/'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8'
+        },
+        body: jsonEncode(param));
+    Map<String, dynamic> result = jsonDecode(response.body);
+    return ResponseModel(
+        status: result['status'],
+        message: result['message'],
+        data: result['data']);
+  }
+
+  @override
+  Future<ResponseModel> resendOtp(String userName) async {
+    Map param = {"userName": userName};
+    httpClient.Response response = await httpClient.post(
+        Uri.parse(ApiBaseEndPoint.baseUri + '/api/account/createotp/'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8'
+        },
+        body: jsonEncode(param));
+    Map<String, dynamic> result = jsonDecode(response.body);
+    return ResponseModel(
+        status: result["status"],
+        message: result["message"],
+        data: result["data"]);
   }
 }
 
 abstract class AccountService {
   Future<dynamic> save(UserRegistrationModel model);
   Future<String> getHome();
-  Future<LoginResponseModel> login(LoginModel model);
+  Future<Map<String, dynamic>> login(LoginModel model);
+  Future<ResponseModel> verifyAccount(OtpModel model);
+  Future<ResponseModel> resendOtp(String userName);
 }

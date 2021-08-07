@@ -5,6 +5,10 @@ import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/UserType.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Service/AccountService.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
+import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
+import 'package:enum_to_string/enum_to_string.dart';
+
+import 'VerfiyAccount.dart';
 
 class RegistrationForm extends StatefulWidget {
   final UserType userType;
@@ -49,13 +53,24 @@ class RegistrationFormState extends State<RegistrationForm> {
                   child: const Text("Edit")),
               TextButton(
                   onPressed: () async {
-                    dynamic result =await _accountService.save(reuestParam);
+                    dynamic result = await _accountService.save(reuestParam);
                     String message = result["message"];
                     String status = result["status"];
-                    CustomNotification.showNotification(
-                        context, message, status);
-
-                    Navigator.of(context).pop();
+                    // if (status ==
+                    //     EnumToString.convertToString(ResponseStatus.Success)) {
+                    //   Navigator.push(
+                    //       context,
+                    //       MaterialPageRoute(
+                    //           builder: (context) => VerifyAccount()));
+                    // } else {
+                    //   CustomNotification.showNotification(
+                    //       context, message, status);
+                    //   Navigator.of(context).pop();
+                    // }
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => VerifyAccount(userName: reuestParam.userName,)));
                   },
                   child: const Text("Ok"))
             ],

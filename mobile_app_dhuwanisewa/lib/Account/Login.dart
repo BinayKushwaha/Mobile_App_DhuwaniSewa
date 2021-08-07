@@ -204,12 +204,18 @@ class LoginFormState extends State<LoginForm> {
                             userName: userNameController.text,
                             password: passwordController.text);
 
-                        LoginResponseModel result=await _accountService.login(reuestParam);
-                        CustomNotification.showNotification(context,
-                            result.message, result.notifyType);
+                        dynamic result =
+                            await _accountService.login(reuestParam);
+                        final message = result["message"];
+                        final notifyType = result["status"];
+                        dynamic data = result["data"];
+                        if (data != null) {
+                          final accessToken = data["accessToken"];
+                          final refreshToken = data["refreshToken"];
+                        }
 
-                        print(userNameController.text);
-                        print(passwordController.text);
+                        CustomNotification.showNotification(
+                            context, message, notifyType);
                       }
                     },
                   ),
