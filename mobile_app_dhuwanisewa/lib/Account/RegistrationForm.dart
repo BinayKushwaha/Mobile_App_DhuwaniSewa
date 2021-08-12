@@ -7,7 +7,6 @@ import 'package:mobile_app_dhuwanisewa/Account/Service/AccountService.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:enum_to_string/enum_to_string.dart';
-
 import 'VerfiyAccount.dart';
 
 class RegistrationForm extends StatefulWidget {

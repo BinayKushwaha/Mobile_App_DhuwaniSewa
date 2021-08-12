@@ -1,3 +1,5 @@
+
+import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Header.dart';
@@ -6,10 +8,10 @@ import 'package:mobile_app_dhuwanisewa/Account/Service/AccountService.dart';
 import 'package:mobile_app_dhuwanisewa/Account/ServiceProviderRegistration.dart';
 import 'package:mobile_app_dhuwanisewa/Account/ServiceSeekerRegistration.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/CustomWidget/CustomNotification.dart';
+import 'package:mobile_app_dhuwanisewa/Constant/Account/AccountResponseMessage.dart';
 import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
-
 import 'OtpResendForm.dart';
 import 'VerfiyAccount.dart';
 
@@ -131,6 +133,9 @@ class LoginFormState extends State<LoginForm> {
   final _formKey = GlobalKey<FormState>();
   bool _passwordHidden = true;
   AccountService _accountService = getIt<AccountService>();
+  bool _veifyAccount = false;
+  bool _changePassword = false;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -182,20 +187,24 @@ class LoginFormState extends State<LoginForm> {
                     },
                   ),
                 ),
-                TextButton(
-                  onPressed: () {
-                    //Forget password code here
-                  },
-                  child: Text('Forget Password',
-                      style:
-                          TextStyle(fontWeight: FontWeight.w500, fontSize: 15)),
-                ),
-                TextButton(
+                if (_changePassword)
+                  TextButton(
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => OtpResend()));
+                      //Forget password code here
                     },
-                    child: Text('Verify your account')),
+                    child: Text('Forget Password',
+                        style: TextStyle(
+                            fontWeight: FontWeight.w500, fontSize: 15)),
+                  ),
+                if (_veifyAccount)
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => OtpResend()));
+                      },
+                      child: Text('Verify your account')),
                 Container(
                   height: 80,
                   padding: EdgeInsets.all(10),
@@ -222,7 +231,31 @@ class LoginFormState extends State<LoginForm> {
                           final accessToken = data["accessToken"];
                           final refreshToken = data["refreshToken"];
                         }
+                        setState(() {
+                          if (notifyType ==
+                                  EnumToString.convertToString(
+                                      ResponseStatus.Info) &&
+                              message ==
+                                  AccountResponseMessage
+                                      .UnVerified_Account_Message) {
+                            _veifyAccount = true;
+                          }
+                          else{
+                            _veifyAccount=false;
+                          }
 
+                          if (notifyType ==
+                                  EnumToString.convertToString(
+                                      ResponseStatus.Info) &&
+                              message ==
+                                  AccountResponseMessage
+                                      .Forget_Password_Message) {
+                            _changePassword = true;
+                          }
+                          else{
+                            _changePassword=false;
+                          }
+                        });
                         CustomNotification.showNotification(
                             context, message, notifyType);
                       }

@@ -1,11 +1,12 @@
+import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Model/OtpModel.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/CustomWidget/CustomNotification.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/Model/ResponseModel.dart';
+import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
-
 import 'Service/AccountService.dart';
 
 class AccountVerficationForm extends StatefulWidget {
@@ -53,6 +54,9 @@ class AccountVerficationFormState extends State<AccountVerficationForm> {
                   OtpModel param=new OtpModel(userName:widget.userName, otp: _otpController.text);
 
                   ResponseModel response=await _accountService.verifyAccount(param);
+                  if(response.status==EnumToString.convertToString(ResponseStatus.Success)){
+                    Navigator.pushNamed(context, '/');
+                  }
                   CustomNotification.showNotification(context, response.message, response.status);
                 }
               },
