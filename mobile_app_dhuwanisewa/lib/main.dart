@@ -23,7 +23,7 @@ class AppHomeState extends State<AppHome>{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(primaryColor: Colors.blueAccent),
+      theme: ThemeData(scaffoldBackgroundColor: Colors.grey[200]),
       title: 'DhuwaniSewa',
       initialRoute: '/',
       routes: {

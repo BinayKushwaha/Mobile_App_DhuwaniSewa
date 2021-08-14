@@ -9,7 +9,7 @@ Widget appHeading() {
         child: Text(
           'DhuwaniSewa',
           style: TextStyle(
-              color: Colors.blue, fontWeight: FontWeight.w500, fontSize: 30),
+              color: Colors.black, fontWeight: FontWeight.w500, fontSize: 30),
         ),
       ),
       Container(
@@ -17,7 +17,7 @@ Widget appHeading() {
         alignment: Alignment.center,
         child: Text(
           'Easy Transportation',
-          style: TextStyle(color: Colors.blue, fontSize: 15),
+          style: TextStyle(color: Colors.black, fontSize: 15),
         ),
       )
     ],

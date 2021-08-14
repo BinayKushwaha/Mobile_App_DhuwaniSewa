@@ -28,66 +28,75 @@ class AccountVerficationFormState extends State<AccountVerficationForm> {
   Widget build(BuildContext context) {
     return new Form(
       key: _formKey,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Container(
-            padding: EdgeInsets.all(10),
-            child: TextFormField(
-              controller: _otpController,
-              decoration: InputDecoration(
-                  border: OutlineInputBorder(), labelText: "Your OTP"),
-              validator: (value) {
-                if (value == null || value.isEmpty) {
-                  return "OTP required";
-                }
-                return null;
-              },
-            ),
-          ),
-          Container(
-            height: 80,
-            padding: EdgeInsets.all(10),
-            child: ElevatedButton(
-              onPressed: () async {
-                if (_formKey.currentState!.validate()) {
-                  OtpModel param=new OtpModel(userName:widget.userName, otp: _otpController.text);
-
-                  ResponseModel response=await _accountService.verifyAccount(param);
-                  if(response.status==EnumToString.convertToString(ResponseStatus.Success)){
-                    Navigator.pushNamed(context, '/');
-                  }
-                  CustomNotification.showNotification(context, response.message, response.status);
-                }
-              },
-              child: Text(
-                'Verify',
-                style: TextStyle(fontSize: 20),
+      child:Center(
+        child:Card(
+          child:  Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Container(
+                padding: EdgeInsets.all(10),
+                child: TextFormField(
+                  controller: _otpController,
+                  decoration: InputDecoration(labelText: "Your OTP"),
+                  validator: (value) {
+                    if (value == null || value.isEmpty) {
+                      return "OTP required";
+                    }
+                    return null;
+                  },
+                ),
               ),
-              style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(Colors.blue)),
-            ),
+              Container(
+                height: 70,
+                padding: EdgeInsets.all(10),
+                child: ElevatedButton(
+                  onPressed: () async {
+                    if (_formKey.currentState!.validate()) {
+                      OtpModel param = new OtpModel(
+                          userName: widget.userName, otp: _otpController.text);
+
+                      ResponseModel response =
+                      await _accountService.verifyAccount(param);
+                      if (response.status ==
+                          EnumToString.convertToString(ResponseStatus.Success)) {
+                        Navigator.pushNamed(context, '/');
+                      }
+                      CustomNotification.showNotification(
+                          context, response.message, response.status);
+                    }
+                  },
+                  child: Text(
+                    'Verify',
+                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                  ),
+                  style: ButtonStyle(
+                      backgroundColor: MaterialStateProperty.all(Colors.red)),
+                ),
+              ),
+              Container(
+                padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
+                child: Row(
+                  children: [
+                    Text('Didn`t receive OTP ?'),
+                    TextButton(
+                        onPressed: () async {
+                          final String userName = widget.userName;
+                          ResponseModel response =
+                          await _accountService.resendOtp(userName);
+                          CustomNotification.showNotification(
+                              context, response.message, response.status);
+                        },
+                        child: Text(
+                          'Resend',
+                          style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500,color: Colors.red,)
+                        ))
+                  ],
+                ),
+              )
+            ],
           ),
-          Container(
-            padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-            child: Row(
-              children: [
-                Text('Didn`t receive OTP ?'),
-                TextButton(
-                    onPressed: () async {
-                      final String userName = widget.userName;
-                      ResponseModel response=await _accountService.resendOtp(userName);
-                      CustomNotification.showNotification(context, response.message, response.status);
-                    },
-                    child: Text(
-                      'Resend',
-                      style: TextStyle(fontSize: 20),
-                    ))
-              ],
-            ),
-          )
-        ],
-      ),
+        )
+      )
     );
   }
 }

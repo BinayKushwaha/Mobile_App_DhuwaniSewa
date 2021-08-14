@@ -17,8 +17,14 @@ class VerifyAccountState extends State<VerifyAccount>{
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Verify your account"),
-        backgroundColor: Colors.blue,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_rounded,color: Colors.red,),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        title: Text("Verify your account",style: TextStyle(fontWeight: FontWeight.w500,color: Colors.black),),
+        backgroundColor: Colors.white,
       ),
       body: Container(
         child: ListView(

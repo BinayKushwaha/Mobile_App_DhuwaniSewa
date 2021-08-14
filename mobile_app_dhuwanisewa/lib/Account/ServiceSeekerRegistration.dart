@@ -17,8 +17,17 @@ class ServiceSeekerRegistrationState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Service Seeker'),
-        backgroundColor: Colors.blue,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_rounded,color: Colors.red,),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        title: Text('Service Seeker',style: TextStyle(
+          fontWeight: FontWeight.w500,
+          color: Colors.black
+        ),),
+        backgroundColor: Colors.white,
       ),
       body: Container(
         padding: EdgeInsets.all(10),

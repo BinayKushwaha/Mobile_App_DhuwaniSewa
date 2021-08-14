@@ -60,7 +60,8 @@ class RegistrationFormState extends State<RegistrationForm> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => VerifyAccount(userName:reuestParam.userName )));
+                              builder: (context) => VerifyAccount(
+                                  userName: reuestParam.userName)));
                     } else {
                       CustomNotification.showNotification(
                           context, message, status);
@@ -75,9 +76,9 @@ class RegistrationFormState extends State<RegistrationForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(10),
-      child: Form(
+    return Center(
+      child: Card(
+          child: Form(
         key: _formKey,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -87,7 +88,6 @@ class RegistrationFormState extends State<RegistrationForm> {
               child: TextFormField(
                 controller: _firstNameController,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
                   labelText: 'First Name',
                 ),
                 onChanged: (input) {
@@ -105,7 +105,6 @@ class RegistrationFormState extends State<RegistrationForm> {
               child: TextFormField(
                 controller: _lastNameController,
                 decoration: InputDecoration(
-                  border: OutlineInputBorder(),
                   labelText: 'Last Name',
                 ),
                 validator: (value) {
@@ -120,7 +119,6 @@ class RegistrationFormState extends State<RegistrationForm> {
               child: TextFormField(
                 controller: _userNameController,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
                     labelText: 'Username',
                     hintText: 'Email or Mobile number'),
                 validator: (value) {
@@ -139,7 +137,6 @@ class RegistrationFormState extends State<RegistrationForm> {
                 obscureText: _passwordHiden,
                 controller: _passwordController,
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
                     labelText: 'Password',
                     suffixIcon: IconButton(
                       icon: Icon(_passwordHiden
@@ -159,14 +156,14 @@ class RegistrationFormState extends State<RegistrationForm> {
               ),
             ),
             Container(
-              height: 80,
+              height: 70,
               padding: EdgeInsets.all(10),
               child: ElevatedButton(
                 style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.blue)),
+                    backgroundColor: MaterialStateProperty.all(Colors.red)),
                 child: Text(
                   'Submit',
-                  style: TextStyle(fontSize: 20),
+                  style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),
                 ),
                 onPressed: () {
                   if (_formKey.currentState!.validate()) {
@@ -189,7 +186,7 @@ class RegistrationFormState extends State<RegistrationForm> {
             ),
           ],
         ),
-      ),
+      )),
     );
   }
 }

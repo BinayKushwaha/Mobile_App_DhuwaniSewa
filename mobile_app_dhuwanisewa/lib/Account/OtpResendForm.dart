@@ -22,8 +22,14 @@ class OtpResendState extends State<OtpResend> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: AppBar(
-        title: Text("Send OTP"),
-        backgroundColor: Colors.blue,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back_ios_rounded,color: Colors.red,),
+          onPressed: (){
+            Navigator.pop(context);
+          },
+        ),
+        title: Text("Send OTP",style: TextStyle(fontWeight: FontWeight.w500,color: Colors.black),),
+        backgroundColor: Colors.white,
       ),
       body: Container(
         padding: EdgeInsets.all(10),
@@ -51,60 +57,64 @@ class ResendFormState extends State<ResendForm> {
   Widget build(BuildContext context) {
     return Form(
         key: _formKey,
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Container(
-              padding: EdgeInsets.all(10),
-              child: TextFormField(
-                controller: _userNameController,
-                decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: "Username",
-                    hintText: "Email or Mobile number"),
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return "Email or Mobile number is required";
-                  }
-                  if (!CustomValidator.isEmail(value) &&
-                      !CustomValidator.isMobileNumber(value))
-                    return "Invalid Username format.";
-                  return null;
-                },
-              ),
-            ),
-            Container(
-              height: 80,
-              padding: EdgeInsets.all(10),
-              child: ElevatedButton(
-                style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.blue)),
-                child: Text(
-                  "Send",
-                  style: TextStyle(fontSize: 20),
+        child:Center(
+          child: Card(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: TextFormField(
+                    controller: _userNameController,
+                    decoration: InputDecoration(
+                        labelText: "Username",
+                        hintText: "Email or Mobile number"),
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return "Email or Mobile number is required";
+                      }
+                      if (!CustomValidator.isEmail(value) &&
+                          !CustomValidator.isMobileNumber(value))
+                        return "Invalid Username format.";
+                      return null;
+                    },
+                  ),
                 ),
-                onPressed: () async {
-                  if (_formKey.currentState!.validate()) {
-                    String userName = _userNameController.text;
-                    ResponseModel response =
+                Container(
+                  height: 70,
+                  padding: EdgeInsets.all(10),
+                  child: ElevatedButton(
+                    style: ButtonStyle(
+                        backgroundColor: MaterialStateProperty.all(Colors.red)),
+                    child: Text(
+                      "Send",
+                      style: TextStyle(fontSize: 20,fontWeight: FontWeight.w500),
+                    ),
+                    onPressed: () async {
+                      if (_formKey.currentState!.validate()) {
+                        String userName = _userNameController.text;
+                        ResponseModel response =
                         await _accountService.resendOtp(userName);
-                    if (response.status ==
-                        EnumToString.convertToString(ResponseStatus.Success)) {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => VerifyAccount(
+                        if (response.status ==
+                            EnumToString.convertToString(ResponseStatus.Success)) {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => VerifyAccount(
                                     userName: userName,
                                   )));
-                    } else {
-                      CustomNotification.showNotification(
-                          context, response.message, response.status);
-                    }
-                  }
-                },
-              ),
-            )
-          ],
-        ));
+                        } else {
+                          CustomNotification.showNotification(
+                              context, response.message, response.status);
+                        }
+                      }
+                    },
+                  ),
+                )
+              ],
+            ),
+          ),
+        )
+    );
   }
 }
