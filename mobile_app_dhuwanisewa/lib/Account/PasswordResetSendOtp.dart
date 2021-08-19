@@ -1,23 +1,22 @@
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
-import 'package:mobile_app_dhuwanisewa/Account/Header.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/CustomWidget/CustomNotification.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/Model/ResponseModel.dart';
 import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
-
+import 'Header.dart';
+import 'PasswordReset.dart';
 import 'Service/AccountService.dart';
-import 'VerfiyAccount.dart';
 
-class OtpResend extends StatefulWidget {
+class PasswordResetOtpSend extends StatefulWidget {
   @override
-  OtpResendState createState() {
-    return OtpResendState();
+  PasswordResetOtpSendState createState() {
+    return PasswordResetOtpSendState();
   }
 }
 
-class OtpResendState extends State<OtpResend> {
+class PasswordResetOtpSendState extends State<PasswordResetOtpSend> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -39,22 +38,22 @@ class OtpResendState extends State<OtpResend> {
       ),
       body: Container(
         child: ListView(
-          children: [appHeading(), ResendForm()],
+          children: [appHeading(), PasswordOtpResendForm()],
         ),
       ),
     );
   }
 }
 
-class ResendForm extends StatefulWidget {
+class PasswordOtpResendForm extends StatefulWidget {
   @override
-  ResendFormState createState() {
-    return ResendFormState();
+  PasswordOtpResendFormState createState() {
+    return PasswordOtpResendFormState();
   }
 }
 
-class ResendFormState extends State<ResendForm> {
-  TextEditingController _userNameController = TextEditingController();
+class PasswordOtpResendFormState extends State<PasswordOtpResendForm> {
+  TextEditingController _emailMobileController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
   AccountService _accountService = getIt<AccountService>();
 
@@ -72,16 +71,17 @@ class ResendFormState extends State<ResendForm> {
                 Container(
                   padding: EdgeInsets.all(10),
                   child: TextFormField(
-                    controller: _userNameController,
+                    controller: _emailMobileController,
                     decoration: InputDecoration(
-                        labelText: "Username", hintText: "Username"),
+                        labelText: "Email or Mobile",
+                        hintText: "Email or Mobile"),
                     validator: (value) {
                       if (value == null || value.isEmpty) {
                         return "Email or Mobile number is required";
                       }
                       if (!CustomValidator.isEmail(value) &&
                           !CustomValidator.isMobileNumber(value))
-                        return "Invalid Username format.";
+                        return "Invalid Email or Mobile format.";
                       return null;
                     },
                   ),
@@ -99,16 +99,17 @@ class ResendFormState extends State<ResendForm> {
                     ),
                     onPressed: () async {
                       if (_formKey.currentState!.validate()) {
-                        String userName = _userNameController.text;
+                        String emailMobile = _emailMobileController.text;
                         ResponseModel response =
-                            await _accountService.resendOtp(userName);
+                            await _accountService.passwordResetSendOtp(emailMobile);
+                        String userName=response.data.toString();
                         if (response.status ==
                             EnumToString.convertToString(
                                 ResponseStatus.Success)) {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => VerifyAccount(
+                                  builder: (context) => PasswordReset(
                                         userName: userName,
                                       )));
                         } else {

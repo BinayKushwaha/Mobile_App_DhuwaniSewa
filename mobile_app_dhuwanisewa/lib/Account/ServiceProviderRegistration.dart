@@ -18,20 +18,23 @@ class ServiceProviderRegistrationState
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
-          icon: Icon(Icons.arrow_back_ios_rounded,color: Colors.red,),
-          onPressed: (){
+          icon: Icon(
+            Icons.arrow_back_ios_rounded,
+            color: Colors.red,
+          ),
+          onPressed: () {
             Navigator.pop(context);
           },
         ),
-        title: Text('Service Provider',style: TextStyle(
-          fontWeight: FontWeight.w500,
-          color: Colors.black
-        ),),
+        title: Text(
+          'Service Provider',
+          style: TextStyle(fontWeight: FontWeight.w500, color: Colors.black),
+        ),
         backgroundColor: Colors.white,
       ),
       body: Container(
-        child: ListView(shrinkWrap: true,padding: EdgeInsets.all(10),
-          children: [appHeading(),RegistrationForm(userType: userType)],
+        child: ListView(
+          children: [appHeading(), RegistrationForm(userType: userType)],
         ),
       ),
     );

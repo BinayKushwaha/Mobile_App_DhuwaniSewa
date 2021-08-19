@@ -76,8 +76,10 @@ class RegistrationFormState extends State<RegistrationForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
       child: Card(
+        margin: EdgeInsets.all(10),
+          elevation: 15,
           child: Form(
         key: _formKey,
         child: Column(
@@ -156,8 +158,8 @@ class RegistrationFormState extends State<RegistrationForm> {
               ),
             ),
             Container(
-              height: 70,
-              padding: EdgeInsets.all(10),
+              height: 50,
+              margin: EdgeInsets.all(10),
               child: ElevatedButton(
                 style: ButtonStyle(
                     backgroundColor: MaterialStateProperty.all(Colors.red)),

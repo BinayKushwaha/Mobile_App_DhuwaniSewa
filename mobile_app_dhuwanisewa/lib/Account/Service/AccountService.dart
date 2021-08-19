@@ -3,6 +3,7 @@ import 'package:mobile_app_dhuwanisewa/Account/Model/AccountModel.dart';
 import 'package:http/http.dart' as httpClient;
 import 'package:mobile_app_dhuwanisewa/Account/Model/LoginModel.dart';
 import 'package:mobile_app_dhuwanisewa/Account/Model/OtpModel.dart';
+import 'package:mobile_app_dhuwanisewa/Account/Model/PasswordResetModel.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/ApiBaseEndPoint.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/Model/ResponseModel.dart';
 
@@ -30,17 +31,6 @@ class AccountServiceImplementation extends AccountService {
       throw Exception("Failed to add user");
     });
     final result = jsonDecode(response.body);
-    return result;
-  }
-
-  Future<String> getHome() async {
-    final httpClient.Response reponse = await httpClient
-        .get(Uri.parse(ApiBaseEndPoint.baseUri + '/api/serviceprovider/list'))
-        .onError((error, stackTrace) {
-      throw Exception("Failed to get Home page");
-    });
-    var result = reponse.body.toString();
-    print("get result:  " + result);
     return result;
   }
 
@@ -77,7 +67,8 @@ class AccountServiceImplementation extends AccountService {
   Future<ResponseModel> resendOtp(String userName) async {
     Map param = {"userName": userName};
     httpClient.Response response = await httpClient.post(
-        Uri.parse(ApiBaseEndPoint.baseUri + '/api/account/createotp/'),
+        Uri.parse(
+            ApiBaseEndPoint.baseUri + '/api/account/registrationcreateotp/'),
         headers: <String, String>{
           'Content-Type': 'application/json; charset=UTF-8'
         },
@@ -88,12 +79,51 @@ class AccountServiceImplementation extends AccountService {
         message: result["message"],
         data: result["data"]);
   }
+
+  @override
+  Future<ResponseModel> passwordResetSendOtp(String emailMobileNumber) async {
+    Map param = {"emailMobileNumber": emailMobileNumber};
+    httpClient.Response response = await httpClient.post(
+        Uri.parse(
+            ApiBaseEndPoint.baseUri + '/api/account/resetpasswordcreateotp/'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8'
+        },
+        body: jsonEncode(param));
+    Map<String, dynamic> result = jsonDecode(response.body);
+    return ResponseModel(
+        status: result["status"],
+        message: result["message"],
+        data: result["data"]);
+  }
+
+  @override
+  Future<ResponseModel> verifyOtpResetPassword(PasswordResetModel model) async {
+    Map param = {
+      "userName": model.userName,
+      "otp": model.otp,
+      "password": model.password
+    };
+    httpClient.Response response = await httpClient.post(
+        Uri.parse(
+            ApiBaseEndPoint.baseUri + '/api/account/verifyotpresetpassword/'),
+        headers: <String, String>{
+          'Content-Type': 'application/json; charset=UTF-8'
+        },
+        body: jsonEncode(param));
+    Map<String, dynamic> result = jsonDecode(response.body);
+    return ResponseModel(
+        status: result['status'],
+        message: result['message'],
+        data: result['data']);
+  }
 }
 
 abstract class AccountService {
   Future<dynamic> save(UserRegistrationModel model);
-  Future<String> getHome();
   Future<Map<String, dynamic>> login(LoginModel model);
   Future<ResponseModel> verifyAccount(OtpModel model);
   Future<ResponseModel> resendOtp(String userName);
+  Future<ResponseModel> passwordResetSendOtp(String emailMobileNumber);
+  Future<ResponseModel> verifyOtpResetPassword(PasswordResetModel model);
 }

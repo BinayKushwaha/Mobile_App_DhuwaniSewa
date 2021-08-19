@@ -28,7 +28,6 @@ class VerifyAccountState extends State<VerifyAccount>{
       ),
       body: Container(
         child: ListView(
-          padding: EdgeInsets.all(10),
           children: [appHeading(),AccountVerficationForm(userName: widget.userName)],
         ),
       ),

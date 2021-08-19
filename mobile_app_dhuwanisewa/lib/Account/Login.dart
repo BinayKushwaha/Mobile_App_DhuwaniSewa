@@ -13,6 +13,7 @@ import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
 import 'OtpResendForm.dart';
+import 'PasswordResetSendOtp.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -25,14 +26,15 @@ class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(
-        padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
+        body: Container(
+      padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+      child: ListView(
         children: [
           appHeading(),
           LoginForm(),
         ],
       ),
-    );
+    ));
   }
 }
 
@@ -41,48 +43,57 @@ class UserRegistrationTypePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Container(
-        padding: EdgeInsets.fromLTRB(10, 30, 10, 0),
+        padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
         child: ListView(
           children: [
             appHeading(),
-            Center(
+            Container(
+              padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
               child: Card(
+                elevation: 15,
+                margin: EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Container(
-                      height: 70,
-                      padding: EdgeInsets.all(10),
+                      height: 50,
+                      margin: EdgeInsets.all(10),
                       child: ElevatedButton(
                         style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.red)),
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.red)),
                         child: Text(
                           'Service Provider',
-                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w500),
                         ),
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ServiceProviderRegistration()));
+                                  builder: (context) =>
+                                      ServiceProviderRegistration()));
                         },
                       ),
                     ),
                     Container(
-                      height: 70,
-                      padding: EdgeInsets.all(10),
+                      height: 50,
+                      margin: EdgeInsets.all(10),
                       child: ElevatedButton(
                         style: ButtonStyle(
-                            backgroundColor: MaterialStateProperty.all(Colors.red)),
+                            backgroundColor:
+                                MaterialStateProperty.all(Colors.red)),
                         child: Text(
                           'Service Seeker',
-                          style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                          style: TextStyle(
+                              fontSize: 20, fontWeight: FontWeight.w500),
                         ),
                         onPressed: () {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => ServiceSeekerRegistration()));
+                                  builder: (context) =>
+                                      ServiceSeekerRegistration()));
                         },
                       ),
                     ),
@@ -96,7 +107,10 @@ class UserRegistrationTypePage extends StatelessWidget {
                               },
                               child: Text(
                                 'Login',
-                                style: TextStyle(fontSize: 17,fontWeight: FontWeight.w500,color: Colors.red),
+                                style: TextStyle(
+                                    fontSize: 17,
+                                    fontWeight: FontWeight.w500,
+                                    color: Colors.red),
                               ))
                         ],
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -131,8 +145,11 @@ class LoginFormState extends State<LoginForm> {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return Container(
+        padding: EdgeInsets.fromLTRB(0, 50, 0, 0),
         child: Card(
+            margin: EdgeInsets.all(10),
+            elevation: 15,
             child: Form(
                 key: _formKey,
                 child: Column(
@@ -188,7 +205,7 @@ class LoginFormState extends State<LoginForm> {
                             Text('Forget Password ?'),
                             TextButton(
                               onPressed: () {
-                                //Forget password code here
+                                Navigator.push(context, MaterialPageRoute(builder: (context)=>PasswordResetOtpSend()));
                               },
                               child: Text('Reset',
                                   style: TextStyle(
@@ -207,10 +224,14 @@ class LoginFormState extends State<LoginForm> {
                                 MaterialPageRoute(
                                     builder: (context) => OtpResend()));
                           },
-                          child: Text('Verify your account',style: TextStyle(fontWeight: FontWeight.w500,color: Colors.red),)),
+                          child: Text(
+                            'Verify your account',
+                            style: TextStyle(
+                                fontWeight: FontWeight.w500, color: Colors.red),
+                          )),
                     Container(
-                      height: 70,
-                      padding: EdgeInsets.all(10),
+                      height: 50,
+                      margin: EdgeInsets.all(10),
                       child: ElevatedButton(
                         style: ButtonStyle(
                             backgroundColor:
