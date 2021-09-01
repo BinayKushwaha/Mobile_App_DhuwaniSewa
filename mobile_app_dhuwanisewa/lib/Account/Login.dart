@@ -8,7 +8,10 @@ import 'package:mobile_app_dhuwanisewa/Account/ServiceProviderRegistration.dart'
 import 'package:mobile_app_dhuwanisewa/Account/ServiceSeekerRegistration.dart';
 import 'package:mobile_app_dhuwanisewa/AppNavigation/AppNavigation.dart';
 import 'package:mobile_app_dhuwanisewa/Commmon/CustomWidget/CustomNotification.dart';
+import 'package:mobile_app_dhuwanisewa/Commmon/Model/ResponseModel.dart';
+import 'package:mobile_app_dhuwanisewa/Commmon/SharedRefrence/SharedRefrence.dart';
 import 'package:mobile_app_dhuwanisewa/Constant/Account/AccountResponseMessage.dart';
+import 'package:mobile_app_dhuwanisewa/Constant/Common/CacheKey.dart';
 import 'package:mobile_app_dhuwanisewa/CustomValidator/CustomValidator.dart';
 import 'package:mobile_app_dhuwanisewa/Enum/ResponseStatus.dart';
 import 'package:mobile_app_dhuwanisewa/ServiceLocator/ServiceLocator.dart';
@@ -135,13 +138,15 @@ class LoginForm extends StatefulWidget {
 }
 
 class LoginFormState extends State<LoginForm> {
+  bool _passwordHidden = true;
+  bool _veifyAccount = false;
+  bool _changePassword = false;
+
   TextEditingController userNameController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
-  bool _passwordHidden = true;
   AccountService _accountService = getIt<AccountService>();
-  bool _veifyAccount = false;
-  bool _changePassword = false;
+  SharedReference _sharedReference = getIt<SharedReference>();
 
   @override
   Widget build(BuildContext context) {
@@ -205,7 +210,11 @@ class LoginFormState extends State<LoginForm> {
                             Text('Forget Password ?'),
                             TextButton(
                               onPressed: () {
-                                Navigator.push(context, MaterialPageRoute(builder: (context)=>PasswordResetOtpSend()));
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) =>
+                                            PasswordResetOtpSend()));
                               },
                               child: Text('Reset',
                                   style: TextStyle(
@@ -246,22 +255,18 @@ class LoginFormState extends State<LoginForm> {
                                 userName: userNameController.text,
                                 password: passwordController.text);
 
-                            dynamic result =
+                            ResponseModel result =
                                 await _accountService.login(reuestParam);
-                            final message = result["message"];
-                            final notifyType = result["status"];
-                            dynamic data = result["data"];
-                            if (data != null) {
-                              final accessToken = data["accessToken"];
-                              final refreshToken = data["refreshToken"];
-                            }
+                            String message = result.message;
+                            String notifyType = result.status;
+                            dynamic data = result.data;
                             setState(() {
                               if (notifyType ==
                                       EnumToString.convertToString(
                                           ResponseStatus.Info) &&
                                   message ==
                                       AccountResponseMessage
-                                          .UnVerified_Account_Message) {
+                                          .unverified_account_message) {
                                 _veifyAccount = true;
                               } else {
                                 _veifyAccount = false;
@@ -272,15 +277,21 @@ class LoginFormState extends State<LoginForm> {
                                           ResponseStatus.Info) &&
                                   message ==
                                       AccountResponseMessage
-                                          .Forget_Password_Message) {
+                                          .forget_password_message) {
                                 _changePassword = true;
                               } else {
                                 _changePassword = false;
                               }
                             });
                             if (notifyType ==
-                                EnumToString.convertToString(
-                                    ResponseStatus.Success)) {
+                                    EnumToString.convertToString(
+                                        ResponseStatus.Success) &&
+                                data != null) {
+                              _sharedReference.setJsonData(
+                                  data, Shared_CacheKey.loginCredentials);
+
+                              LoginResponseModel userData =
+                                  LoginResponseModel.fromJson(data);
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(

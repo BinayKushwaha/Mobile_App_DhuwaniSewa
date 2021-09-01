@@ -41,7 +41,10 @@ class PasswordResetState extends State<PasswordReset> {
       ),
       body: Container(
         child: ListView(
-          children: [appHeading(),PasswordResetForm(userName: widget.userName)],
+          children: [
+            appHeading(),
+            PasswordResetForm(userName: widget.userName)
+          ],
         ),
       ),
     );
@@ -61,8 +64,9 @@ class PasswordResetForm extends StatefulWidget {
 class PasswordResetFormState extends State<PasswordResetForm> {
   final _formKey = GlobalKey<FormState>();
   AccountService _accountService = getIt<AccountService>();
-  TextEditingController _otpController = TextEditingController();
+    TextEditingController _otpController = TextEditingController();
   TextEditingController _passWordController = TextEditingController();
+  bool _passwordHidden = true;
 
   @override
   Widget build(BuildContext context) {
@@ -92,8 +96,20 @@ class PasswordResetFormState extends State<PasswordResetForm> {
                 padding: EdgeInsets.all(10),
                 child: TextFormField(
                   controller: _passWordController,
+                  obscureText: _passwordHidden,
                   decoration: InputDecoration(
-                      labelText: "Password", hintText: "Reset password"),
+                      labelText: "Password",
+                      hintText: "Reset password",
+                      suffixIcon: IconButton(
+                        icon: Icon(_passwordHidden
+                            ? Icons.visibility_off
+                            : Icons.visibility),
+                        onPressed: () {
+                          setState(() {
+                            _passwordHidden = !_passwordHidden;
+                          });
+                        },
+                      )),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return "Password required";

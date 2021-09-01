@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app_dhuwanisewa/AppSetting/Widget/SettingNavigation.dart';
 
 class AppNavigation extends StatefulWidget {
   AppNavigationState createState() {
@@ -8,17 +9,14 @@ class AppNavigation extends StatefulWidget {
 
 class AppNavigationState extends State<AppNavigation> {
   int _selectedIndex = 0;
-  static const Color _NavBgColor = Colors.blue;
   static const TextStyle buttionStyle =
       TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOption = <Widget>[
+
+  List<Widget> _widgetOption = <Widget>[
     Text('Index 0: Home', style: buttionStyle),
     Text('Index 1: My Task', style: buttionStyle),
     Text('Index 2: History', style: buttionStyle),
-    Text(
-      'Index 3: More',
-      style: buttionStyle,
-    )
+    SettingNavigationPage()
   ];
 
   void _onItemTapped(int index) {

@@ -35,7 +35,7 @@ class AccountServiceImplementation extends AccountService {
   }
 
   @override
-  Future<Map<String, dynamic>> login(LoginModel model) async {
+  Future<ResponseModel> login(LoginModel model) async {
     Map param = {"userName": model.userName, "password": model.password};
     httpClient.Response response = await httpClient.post(
         Uri.parse(ApiBaseEndPoint.baseUri + '/api/account/login/'),
@@ -43,8 +43,8 @@ class AccountServiceImplementation extends AccountService {
           'Content-Type': 'application/json; charset=UTF-8'
         },
         body: jsonEncode(param));
-    Map<String, dynamic> result = jsonDecode(response.body);
-    return result;
+    dynamic data = jsonDecode(response.body);
+    return ResponseModel.fromJson(data);
   }
 
   @override
@@ -121,7 +121,7 @@ class AccountServiceImplementation extends AccountService {
 
 abstract class AccountService {
   Future<dynamic> save(UserRegistrationModel model);
-  Future<Map<String, dynamic>> login(LoginModel model);
+  Future<ResponseModel> login(LoginModel model);
   Future<ResponseModel> verifyAccount(OtpModel model);
   Future<ResponseModel> resendOtp(String userName);
   Future<ResponseModel> passwordResetSendOtp(String emailMobileNumber);
