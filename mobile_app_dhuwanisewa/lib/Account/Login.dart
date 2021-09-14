@@ -287,11 +287,18 @@ class LoginFormState extends State<LoginForm> {
                                     EnumToString.convertToString(
                                         ResponseStatus.Success) &&
                                 data != null) {
+
+                              //Set user data in cache
                               _sharedReference.setJsonData(
                                   data, Shared_CacheKey.loginCredentials);
 
                               LoginResponseModel userData =
                                   LoginResponseModel.fromJson(data);
+
+                              //Set userId in cache
+                              _sharedReference.setInt(Shared_CacheKey.appUserId,
+                                  userData.appUserId);
+
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
